@@ -1,0 +1,159 @@
+{% extends 'base.html' %}
+{% block content %}
+<br> <br>
+<div class="container-fluid mt-4">
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="profile-img-container3">
+                        <img src="{{ url_for('static', filename='images/'+data.PlayerName+'.webp') }}" class="profile-img"
+                            alt="Cinque Terre" width="200">
+                    </div>
+                    <div class="text-center mt-2">
+                        <span class="playerNameStyle">{{ data.PlayerName }}</span>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 text-center">
+                    <h2>Kansas City Chiefs</h2>
+                    <img src="{{ url_for('static', filename='images/flag1.webp') }}" class="img-rounded"
+                        alt="Cinque Terre" height="180px;">
+                </div>
+
+                <div class="col-sm-3 text-center">
+                    <h3 class="mt-2">Countdown Clock</h3>
+                    <hr>
+                    <div class="mt-2" id="countdown"></div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="text-center mt-3">
+        <h2><i class="fas fa-binoculars"></i> SPOT LIGHT</h2>
+        <hr>
+    </div>
+    <div class="row">
+        <div class="col-sm-4 spotContent">
+            <a href="" style="text-decoration: none;">
+                <img src="{{ url_for('static', filename='images/spt2.webp') }}" class="img-thumbnail"
+                    alt="Cinque Terre">
+                <div class="card">
+                    <div class="card-body">
+                        <span class="headingContent">{{ data.PlayerName }} visits hospital to support children wounded at
+                            Chiefs' Super Bowl parade</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-4 spotContent">
+            <a href="" style="text-decoration: none;">
+                <img src="{{ url_for('static', filename='images/spt3.webp') }}" class="img-thumbnail"
+                    alt="Cinque Terre">
+                <div class="card">
+                    <div class="card-body">
+                        <span class="headingContent">Top ten {{ data.PlayerName }} plays | 2023 season Video including Super
+                            Bowl </span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-4 spotContent">
+            <a href="" style="text-decoration: none;">
+                <img src="{{ url_for('static', filename='images/spt1.webp') }}" class="img-thumbnail"
+                    alt="Cinque Terre">
+                <div class="card">
+                    <div class="card-body">
+                        <span class="headingContent">{{ data.PlayerName }} posts hilarious reaction as combine truck compares QB to
+                            faster DL prospects | Simulcam</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="text-center mt-3">
+        <h2><i class="far fa-edit"></i> Tackle Talks</h2>
+        <hr>
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-group" style="text-align: left;">
+                        <label for="comment">Your Comment:</label>
+                        <textarea class="form-control" rows="3" id="comment"></textarea>
+                    </div>
+                    <div class="col-12 d-flex justify-content-end">
+                        <button type="button" class="btn btn-info pull-right"><i class="fab fa-telegram-plane"></i>
+                            Send</button>
+                    </div>
+
+                    <div class="comment mt-3">
+                        <div class="comment-content">
+                            <img src="{{ url_for('static', filename='images/user.png') }}" alt="User 1" class="user-avatar">
+                            <strong>Lauren: </strong>
+                           
+                            <span class="ml-2">{{ data.PlayerName }} is so interesting! I loveee him!</span>
+                            
+                            <i class="like-btn fas fa-thumbs-up"> 225</i>
+                        </div>
+                    </div>
+
+                    <div class="comment mt-3">
+                        <div class="comment-content">
+                            <img src="{{ url_for('static', filename='images/user.png') }}" alt="User 1" class="user-avatar">
+                            <strong>Nina: </strong>
+                           
+                            <span class="ml-2">{{ data.PlayerName }} is so swifty, cant wait to see him in future games</span>
+                            
+                            <i class="like-btn fas fa-thumbs-up"> 113</i>
+                        </div>
+                    </div>
+
+                    <div class="comment mt-3">
+                        <div class="comment-content">
+                            <img src="{{ url_for('static', filename='images/user.png') }}" alt="User 1" class="user-avatar">
+                            <strong>Fatima: </strong>
+                           
+                            <span class="ml-2">Mad cause bad,, booooooooo</span>
+                            
+                            <i class="like-btn fas fa-thumbs-up"> 15</i>
+                        </div>
+                    </div>
+
+                    <div class="comment mt-3">
+                        <div class="comment-content">
+                            <img src="{{ url_for('static', filename='images/user.png') }}" alt="User 1" class="user-avatar">
+                            <strong>Tori: </strong>
+                           
+                            <span class="ml-2">Needs more pushups!</span>
+                            
+                            <i class="like-btn fas fa-thumbs-up"> 3</i>
+                        </div>
+                    </div>
+
+                    <div class="comment mt-3">
+                        <div class="comment-content">
+                            <img src="{{ url_for('static', filename='images/user.png') }}" alt="User 1" class="user-avatar">
+                            <strong>Shaykh: </strong>
+                           
+                            <span class="ml-2">Hi is always my inspiration</span>
+                            
+                            <i class="like-btn fas fa-thumbs-up"> 1</i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
