@@ -32,6 +32,10 @@ Run the application by using the following command from the root of the project.
 python3 app.py
 ```
 
+https://github.com/shaykhsiddique/Tackle-Talk/assets/18369069/0817814c-88fb-4d1d-b73d-5abe224bf2a0
+
+
+
 Datasets
 --------------
 Datasets are collected from social media.
