@@ -60,6 +60,12 @@ Processed dataset-
 
 Use this to access [Figma Model](https://www.figma.com/file/OMJfmUIqWiwuz0BWr4BRHa/BOTB_V1_03%2F07%2F24?type=design&node-id=21%3A691&mode=design&t=p0xhXGhmAfpL7lWX-1)
 
+
+Use Case diagram
+--------------
+![BOTB_UseCase4](https://github.com/shaykhsiddique/PVAMU_BoB/assets/143579471/87410577-8745-4a77-9637-9cc458e2ab86)
+
+
 Screenshots
 --------------
 
