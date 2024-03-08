@@ -29,4 +29,4 @@ def player(playername):
 
 if __name__ == '__main__':
     # Run the app on port 5001 (you can change this to any available port)
-    app.run(host='0.0.0.0', debug=True, port=5002)
+    app.run(host='0.0.0.0', debug=True, port=5001)
