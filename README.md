@@ -1,15 +1,19 @@
-# PVAMU_BoB
-PVAMU Battle of brain project
 
-Requirements:
-1. Extract data (from social media comments)
-2. choose most 3 popular players
-3. create spotlight page
+   Tackle Talk
+==========
+	
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://shaykhsiddique.github.io)
 
-Creation process:
- Training AI model
-   - Create training data (reddit comments ner data)
-   - Create testing data (superbowl LVIII: chiefs vs 49ers)
-Questions
-   - How to read the correct data
-   - Player full names, nicknames, jersey numbers
+Tackle Talk is an extension of NFL+ that grants subscribers access to highlighted recaps of the most talked about players, through the prediction of AI, Stemming from social media comments.
+
+Description
+--------------
+*Requirements and Dependencies*
+- Python3
+
+*Python Dependencies*
+- Flask - Web Framework
+- Pandas - Used for data manipulation and analysis 
+- Re - Regular Expressions
+- Spacy - Machine Learning pretrained models
+- Levenshtein - Used for mathmetical formulation
