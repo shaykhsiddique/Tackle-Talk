@@ -24,6 +24,9 @@ Description
 Run the bash commands.
 ``` bash
 pip install flask
+pip install pandas
+pip install spacy
+pip install Levenshtein
 ```
 Install all dependencies.
 
@@ -32,8 +35,19 @@ Run the application by using the following command from the root of the project.
 python3 app.py
 ```
 
-https://github.com/shaykhsiddique/Tackle-Talk/assets/18369069/0817814c-88fb-4d1d-b73d-5abe224bf2a0
+The Flask server will run on **localhost:5001**.
 
+If you need to change the server IP or Port, it will be found on the Project Root, `app.py` **last line**.
+
+``` python
+	app.run(host='0.0.0.0', debug=True, port=5001)
+```
+
+Change the port number from here.
+
+
+
+https://github.com/shaykhsiddique/Tackle-Talk/assets/18369069/0817814c-88fb-4d1d-b73d-5abe224bf2a0
 
 
 Datasets
@@ -61,6 +75,13 @@ Players spotlight contents
 ![FireShot Capture 005 - Tackle Talk - 172 25 32 85](https://github.com/shaykhsiddique/PVAMU_BoB/assets/18369069/a1c751f5-eac5-4d2e-988a-6bb4dd9ee2f4)
 
 
-For any questions related to application please email:
-shaykhsiddiqee@gmail.com
+**Common Problems while deploying**
+```
+Address already in use
+Port 5001 is in use by another program. Either identify and stop that program, or start the server with a different port.
+```
+**Fix:** Just use a different port while deploying. How to change the port is discussed on the **Project Deployment** section above.
+
+For any questions related to the application, please feel free to contact.
+Email: shaykhsiddiqee@gmail.com
 
