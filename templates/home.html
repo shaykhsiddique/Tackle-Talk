@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block content %}
+<!-- start slider -->
+<div class="row">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{{ url_for('static', filename='images/img1.jpg') }}" alt="Los Angeles" style="width:100%;">
+            </div>
+
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/img2.jpg') }}" alt="Chicago" style="width:100%;">
+            </div>
+
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/img6.jpg') }}" alt="New York" style="width:100%;">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- end slider -->
+
+<div class="container">
+    <h2 class="text-center mt-2">IN THE SPOTLIGHT</h2>
+    <hr>
+    <div class="row mt-5">
+        <div class="col-sm-4 text-center profile-img-container2">
+            <a href="{{ url_for('player', playername=data.prediction[0]) }}">
+                <div class="profile-img-container">
+                    <img src="{{ url_for('static', filename='images/'+data.prediction[0]+'.webp') }}" alt="Profile Picture"
+                        class="profile-img">
+                </div>
+                <span class="playerNameStyle">{{ data.prediction[0] }}</span>
+            </a>
+        </div>
+        <div class="col-sm-4 text-center profile-img-container2">
+            <a href="{{ url_for('player', playername=data.prediction[1]) }}">
+                <div class="profile-img-container">
+                    <img src="{{ url_for('static', filename='images/'+data.prediction[1]+'.webp') }}" alt="Profile Picture"
+                        class="profile-img">
+                </div>
+                <span class="playerNameStyle">{{ data.prediction[1] }}</span>
+            </a>
+        </div>
+        <div class="col-sm-4 text-center profile-img-container2">
+            <a href="{{ url_for('player', playername=data.prediction[2]) }}">
+                <div class="profile-img-container">
+                    <img src="{{ url_for('static', filename='images/'+data.prediction[2]+'.webp') }}" alt="Profile Picture"
+                        class="profile-img">
+                </div>
+                <span class="playerNameStyle">{{ data.prediction[2] }}</span>
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}
